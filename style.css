@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --grayish-blue: hsl(240, 18%, 77%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 148px;
+  padding-bottom: 85px;
+  background-image: linear-gradient(
+    to top,
+    hsl(240, 73%, 65%),
+    hsl(273, 75%, 66%)
+  );
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.container {
+  position: relative;
+  background-color: white;
+  width: 327px;
+  border-radius: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  position: absolute;
+  left: 17px;
+  top: -107px;
+}
+.image-shadow {
+  position: absolute;
+  left: 42px;
+}
+
+.accordian {
+  padding: 132px 24px 48px 24px;
+}
+
+.divider {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--light-grayish-blue);
+}
+.accordian-title {
+  text-align: center;
+  padding-bottom: 38px;
+}
+
+.accordian-item {
+  padding: 18px 0;
+}
+
+.accordian-item-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordian-item-content {
+  margin-top: 12px;
+  display: none;
+}
+
+.open {
+  display: block;
+}
